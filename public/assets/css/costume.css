@@ -1,0 +1,133 @@
+.counter-box {
+  border-radius: 6pt;
+}
+
+.counter-box:hover .counter-title {
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+  border-radius: 6pt;
+}
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.mycard {
+  margin: 30px auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.mycard .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.mycard .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.mycard .card_title p {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: -60px;
+  height: 40px;
+}
+
+.mycard:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(110, 71, 71, 0.12), 
+    -5px -5px 30px 15px rgba(110, 71, 71, 0.22);
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
+.table {
+  border-style:solid;
+  border-width: 2px;
+  border-color: #4285f4!important;
+}
+
+.table thead {
+  background-color: #4285f4!important;
+  color: white;
+}
+
+.table thead th {
+  font-size: 15px;
+}
+
+.table-bordered td {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.table tbody {
+  border-style:solid;
+  border-width: 2.5px;
+  border-color: #d4dae0;
+}
+
+.table tfoot {
+  border-style:solid;
+  border-width: 2.5px;
+  border-color: #d4dae0;
+}
+
+.alert {
+  margin-bottom: 0.25px;
+  padding: 3px;
+}
+
+.alert-warning {
+  margin-top: 15px;
+}
+
+.form-font-size {
+  font-size: 18px;
+}
+
+.modal-backdrop {
+  z-index: -1;
+}
+/*
+.mycard {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  background-image: url('https://i.redd.it/b3esnz5ra34y.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  transition: 0.4s;
+}
+*/
